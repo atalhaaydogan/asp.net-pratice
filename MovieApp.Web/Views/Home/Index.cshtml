@@ -1,19 +1,28 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
+﻿@model Movie
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <style>
+        .film {
+            border: 1px solid #000000;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>Film Lİstesi</h1>
     <div id="filmler">
         <div class="film">
-            <p>@ViewBag.FilmBasligi</p>
-            <p>@ViewBag.FilmAcıklamasi</p>
-            <p>@ViewBag.FilmYonetmeni</p>
+            <p>@Model.Title</p>
+            <p>@Model.Description</p>
+            <p>@Model.Director</p>
             <p>
                 <ul>
-                    @foreach (var item in ViewBag.Oyuncular)
+                    @foreach (var player in @Model.Players)
                     {
-                        <li>@item</li>
+                        <li>@player</li>
                     }
                 </ul>
             </p>

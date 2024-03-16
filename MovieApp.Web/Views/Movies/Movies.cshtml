@@ -1,8 +1,37 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
+﻿@model List<Movie>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <style>
+        .film {
+            border: 1px solid #000000;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    movies/movies.cshtml
+    <h1>Film Lİstesi</h1>
+    <div id="filmler">
+
+        @foreach (var movie in Model)
+        {
+            <div class="film">
+                <p>@movie.Title</p>
+                <p>@movie.Description</p>
+                <p>@movie.Director</p>
+                <p>
+                    <ul>
+                        @foreach (var player in @movie.Players)
+                        {
+                            <li>@player</li>
+                        }
+                    </ul>
+                </p>
+            </div>
+
+        }
+    </div>
 </body>
 </html>
