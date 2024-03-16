@@ -22,15 +22,21 @@ namespace MovieApp.Web.Controllers
                 new Movie { Title="film 1", 
                     Description="açıklama 1", 
                     Director="yönetmen 1", 
-                    Players=new string[] { "oyuncu 1", "oyuncu 2"} },
+                    Players=new string[] { "oyuncu 1", "oyuncu 2"},
+                    ImageUrl="1.jpg"                
+                },
                 new Movie { Title="film 2",
                     Description="açıklama 1", 
                     Director="yönetmen 1", 
-                    Players=new string[] { "oyuncu 2", "oyuncu 2"} },
+                    Players=new string[] { "oyuncu 2", "oyuncu 2"},
+                    ImageUrl="2.jpg"  
+                },
                 new Movie { Title="film 1", 
                     Description="açıklama 1", 
                     Director="yönetmen 1", 
-                    Players=new string[] { "oyuncu 1", "oyuncu 2"} }
+                    Players=new string[] { "oyuncu 1", "oyuncu 2"},
+                    ImageUrl="3.jpg"  
+                }
             };
             return View("Movies", filmListesi);
         }

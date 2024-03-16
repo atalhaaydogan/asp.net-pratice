@@ -27,6 +27,8 @@ namespace MovieApp.Web
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles(); // wwwroot
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
