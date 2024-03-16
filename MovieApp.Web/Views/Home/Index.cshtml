@@ -1,0 +1,23 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Film Lİstesi</h1>
+    <div id="filmler">
+        <div class="film">
+            <p>@ViewBag.FilmBasligi</p>
+            <p>@ViewBag.FilmAcıklamasi</p>
+            <p>@ViewBag.FilmYonetmeni</p>
+            <p>
+                <ul>
+                    @foreach (var item in ViewBag.Oyuncular)
+                    {
+                        <li>@item</li>
+                    }
+                </ul>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
