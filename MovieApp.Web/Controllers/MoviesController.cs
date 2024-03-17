@@ -38,7 +38,21 @@ namespace MovieApp.Web.Controllers
                     ImageUrl="3.jpg"  
                 }
             };
-            return View("Movies", filmListesi);
+
+            var turListesi = new List<Genre>()
+            {
+                new Genre {Name = "Mecara"},
+                new Genre {Name = "Komedi"},
+                new Genre {Name = "Romantik"},
+                new Genre {Name = "Savaş"}
+            };
+
+            var model = new MovieGenreViewModel()
+            {
+                Movies = filmListesi,
+                Genres = turListesi
+            };
+            return View("Movies", model);
         }
 
         // localhost:26075/movies/details

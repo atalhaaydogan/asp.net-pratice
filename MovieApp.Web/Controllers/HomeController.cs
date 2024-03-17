@@ -18,6 +18,7 @@ namespace MovieApp.Web.Controllers
             m.Description = filmAcıklama;
             m.Director = filmYonetmen;
             m.Players = oyuncular;
+            m.ImageUrl = "1.jpg";
 
             return View(m);
         }
