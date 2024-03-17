@@ -1,6 +1,16 @@
 ﻿@model Movie
 
-@await Html.PartialAsync("_header")
+@section header
+{
+    @await Html.PartialAsync("_header")
+}
+
+@section scripts
+{
+    <script src="~/js/scripts.js"></script>
+}
+
+
 
     <h1>Film Lİstesi</h1>
     <div id="filmler">
