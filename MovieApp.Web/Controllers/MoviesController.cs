@@ -39,18 +39,10 @@ namespace MovieApp.Web.Controllers
                 }
             };
 
-            var turListesi = new List<Genre>()
-            {
-                new Genre {Name = "Mecara"},
-                new Genre {Name = "Komedi"},
-                new Genre {Name = "Romantik"},
-                new Genre {Name = "Savaş"}
-            };
-
             var model = new MovieGenreViewModel()
             {
-                Movies = filmListesi,
-                Genres = turListesi
+                Movies = filmListesi
+
             };
             return View("Movies", model);
         }
