@@ -38,6 +38,33 @@ namespace MovieApp.Web.Data
                     Director = "yönetmen 1",
                     Players = new string[] { "oyuncu 1", "oyuncu 2" },
                     ImageUrl = "3.jpg"
+                },
+                new Movie
+                {
+                    MovieId = 4,
+                    Title = "film 1",
+                    Description = "açıklama 1",
+                    Director = "yönetmen 1",
+                    Players = new string[] { "oyuncu 1", "oyuncu 2" },
+                    ImageUrl = "1.jpg"
+                },
+                new Movie
+                {
+                    MovieId = 5,
+                    Title = "film 2",
+                    Description = "açıklama 1",
+                    Director = "yönetmen 1",
+                    Players = new string[] { "oyuncu 2", "oyuncu 2" },
+                    ImageUrl = "2.jpg"
+                },
+                new Movie
+                {
+                    MovieId = 6,
+                    Title = "film 1",
+                    Description = "açıklama 1",
+                    Director = "yönetmen 1",
+                    Players = new string[] { "oyuncu 1", "oyuncu 2" },
+                    ImageUrl = "3.jpg"
                 }
             };
         }
@@ -57,7 +84,7 @@ namespace MovieApp.Web.Data
 
         public static Movie GeyById(int id)
         {
-            return _movies.FirstOrDefault(m=>m.MovieId == id);
+            return _movies.FirstOrDefault(m => m.MovieId == id);
         }
     }
 }
