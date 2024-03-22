@@ -27,10 +27,10 @@ namespace MovieApp.Web.Controllers
             return View("Movies", model);
         }
 
-        // localhost:26075/movies/details
-        public string Details()
+        // localhost:26075/movies/details/1
+        public IActionResult Details(int id)
         {
-            return "Film Detayı";
+            return View(MovieRepository.GeyById(id));
         }
     }
 }
