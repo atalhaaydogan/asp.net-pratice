@@ -11,7 +11,7 @@ namespace MovieApp.Web.Controllers
     {
         // action
         // localhost:26075/movies/list
-
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
@@ -19,6 +19,7 @@ namespace MovieApp.Web.Controllers
 
         // localhost:26075/movies/list/
         // localhost:26075/movies/list/1
+        [HttpGet]
         public IActionResult List(int? id, string q)
         {
             //{controller}/{action}/{id?}
@@ -51,13 +52,21 @@ namespace MovieApp.Web.Controllers
         }
 
         // localhost:26075/movies/details/1
+        [HttpGet]
         public IActionResult Details(int id)
         {
             return View(MovieRepository.GeyById(id));
         }
-
+        [HttpGet]
         public IActionResult Create()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(string Title, string Description, string Director, string ImageUrl, int GenreId)
+        {
+            // modelbinding
             return View();
         }
     }
