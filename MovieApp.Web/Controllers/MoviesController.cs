@@ -55,5 +55,10 @@ namespace MovieApp.Web.Controllers
         {
             return View(MovieRepository.GeyById(id));
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
