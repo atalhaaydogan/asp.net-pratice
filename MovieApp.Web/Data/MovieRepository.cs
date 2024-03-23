@@ -19,7 +19,8 @@ namespace MovieApp.Web.Data
                     Description = "açıklama 1",
                     Director = "yönetmen 1",
                     Players = new string[] { "oyuncu 1", "oyuncu 2" },
-                    ImageUrl = "1.jpg"
+                    ImageUrl = "1.jpg",
+                    GenreId = 1
                 },
                 new Movie
                 {
@@ -28,7 +29,8 @@ namespace MovieApp.Web.Data
                     Description = "açıklama 1",
                     Director = "yönetmen 1",
                     Players = new string[] { "oyuncu 2", "oyuncu 2" },
-                    ImageUrl = "2.jpg"
+                    ImageUrl = "2.jpg",
+                    GenreId = 1
                 },
                 new Movie
                 {
@@ -37,7 +39,8 @@ namespace MovieApp.Web.Data
                     Description = "açıklama 1",
                     Director = "yönetmen 1",
                     Players = new string[] { "oyuncu 1", "oyuncu 2" },
-                    ImageUrl = "3.jpg"
+                    ImageUrl = "3.jpg",
+                    GenreId = 3
                 },
                 new Movie
                 {
@@ -46,25 +49,8 @@ namespace MovieApp.Web.Data
                     Description = "açıklama 1",
                     Director = "yönetmen 1",
                     Players = new string[] { "oyuncu 1", "oyuncu 2" },
-                    ImageUrl = "1.jpg"
-                },
-                new Movie
-                {
-                    MovieId = 5,
-                    Title = "film 2",
-                    Description = "açıklama 1",
-                    Director = "yönetmen 1",
-                    Players = new string[] { "oyuncu 2", "oyuncu 2" },
-                    ImageUrl = "2.jpg"
-                },
-                new Movie
-                {
-                    MovieId = 6,
-                    Title = "film 1",
-                    Description = "açıklama 1",
-                    Director = "yönetmen 1",
-                    Players = new string[] { "oyuncu 1", "oyuncu 2" },
-                    ImageUrl = "3.jpg"
+                    ImageUrl = "1.jpg",
+                    GenreId = 4
                 }
             };
         }
