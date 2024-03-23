@@ -21,6 +21,12 @@ namespace MovieApp.Web.Controllers
         // localhost:26075/movies/list/1
         public IActionResult List(int? id)
         {
+            //{controller}/{action}/{id?}
+            //movies/list/2
+            var controller = RouteData.Values["controller"];
+            var action = RouteData.Values["action"];
+            var genreId = RouteData.Values["id"];
+
             var movies = MovieRepository.Movies;
 
             if (id != null) 

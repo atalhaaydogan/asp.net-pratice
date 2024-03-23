@@ -9,10 +9,8 @@ namespace MovieApp.Web.ViewComponents
     {
         public IViewComponentResult Invoke()
         {
-
-
+            ViewBag.SelectedGenre = RouteData.Values["id"];
             return View(GenreRepository.Genres);
-
         }
     }
 }
