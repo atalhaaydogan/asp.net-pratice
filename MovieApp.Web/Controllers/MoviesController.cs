@@ -19,19 +19,28 @@ namespace MovieApp.Web.Controllers
 
         // localhost:26075/movies/list/
         // localhost:26075/movies/list/1
-        public IActionResult List(int? id)
+        public IActionResult List(int? id, string q)
         {
             //{controller}/{action}/{id?}
             //movies/list/2
-            var controller = RouteData.Values["controller"];
-            var action = RouteData.Values["action"];
-            var genreId = RouteData.Values["id"];
+            //var controller = RouteData.Values["controller"];
+            //var action = RouteData.Values["action"];
+            //var genreId = RouteData.Values["id"];
+            //var kelime = HttpContext.Request.Query["Q"].ToString();
 
             var movies = MovieRepository.Movies;
+
+
 
             if (id != null) 
             {
                 movies = movies.Where(m=>m.GenreId == id).ToList();
+            }
+            if(!string.IsNullOrEmpty(q))
+            {
+                movies = movies.Where(i=>
+                i.Title.ToLower().Contains(q.ToLower()) || 
+                i.Description.ToLower().Contains(q.ToLower())).ToList();
             }
             var model = new MoviesViewModel()
             {

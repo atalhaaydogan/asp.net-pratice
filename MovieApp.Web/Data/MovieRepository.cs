@@ -35,7 +35,7 @@ namespace MovieApp.Web.Data
                 new Movie
                 {
                     MovieId = 3,
-                    Title = "film 1",
+                    Title = "film 3",
                     Description = "açıklama 1",
                     Director = "yönetmen 1",
                     Players = new string[] { "oyuncu 1", "oyuncu 2" },
@@ -45,7 +45,27 @@ namespace MovieApp.Web.Data
                 new Movie
                 {
                     MovieId = 4,
-                    Title = "film 1",
+                    Title = "film 4",
+                    Description = "açıklama 1",
+                    Director = "yönetmen 1",
+                    Players = new string[] { "oyuncu 1", "oyuncu 2" },
+                    ImageUrl = "1.jpg",
+                    GenreId = 4
+                },
+                new Movie
+                {
+                    MovieId = 4,
+                    Title = "film 5",
+                    Description = "açıklama 1",
+                    Director = "yönetmen 1",
+                    Players = new string[] { "oyuncu 1", "oyuncu 2" },
+                    ImageUrl = "1.jpg",
+                    GenreId = 4
+                },
+                new Movie
+                {
+                    MovieId = 4,
+                    Title = "film 6",
                     Description = "açıklama 1",
                     Director = "yönetmen 1",
                     Players = new string[] { "oyuncu 1", "oyuncu 2" },
