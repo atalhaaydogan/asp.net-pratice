@@ -85,6 +85,7 @@ namespace MovieApp.Web.Data
 
         public static void Add(Movie movie)
         {
+            movie.MovieId = Movies.Count() + 1;
             _movies.Add(movie);
         }
 
