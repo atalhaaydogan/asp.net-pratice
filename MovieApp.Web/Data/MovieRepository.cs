@@ -1,4 +1,5 @@
 ﻿using MovieApp.Web.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -97,7 +98,7 @@ namespace MovieApp.Web.Data
         {
             foreach (var movie in _movies)
             {
-                if(movie.MovieId == m.MovieId)
+                if (movie.MovieId == m.MovieId)
                 {
                     movie.Title = m.Title;
                     movie.Description = m.Description;
@@ -110,5 +111,14 @@ namespace MovieApp.Web.Data
                 }
             }
         }
+        public static void Delete(int MovieId)
+        {
+            var movie = GeyById(MovieId);
+            if (movie != null)
+            {
+                _movies.Remove(movie);
+            }
+        }
+
     }
 }

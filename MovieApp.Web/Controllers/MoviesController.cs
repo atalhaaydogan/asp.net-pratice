@@ -87,5 +87,13 @@ namespace MovieApp.Web.Controllers
             return View(m);
 
         }
+
+        [HttpPost]
+        public IActionResult Delete(int MovieId)
+        {
+            MovieRepository.Delete(MovieId);
+            return RedirectToAction("List");
+
+        }
     }
 }
