@@ -90,7 +90,7 @@ namespace MovieApp.Web.Data
             _movies.Add(movie);
         }
 
-        public static Movie GeyById(int id)
+        public static Movie GetById(int id)
         {
             return _movies.FirstOrDefault(m => m.MovieId == id);
         }
@@ -113,7 +113,7 @@ namespace MovieApp.Web.Data
         }
         public static void Delete(int MovieId)
         {
-            var movie = GeyById(MovieId);
+            var movie = GetById(MovieId);
             if (movie != null)
             {
                 _movies.Remove(movie);

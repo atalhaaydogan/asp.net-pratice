@@ -46,7 +46,7 @@ namespace MovieApp.Web.Controllers
         [HttpGet]
         public IActionResult Details(int id)
         {
-            return View(MovieRepository.GeyById(id));
+            return View(MovieRepository.GetById(id));
         }
         [HttpGet]
         public IActionResult Create()
@@ -72,7 +72,7 @@ namespace MovieApp.Web.Controllers
         public IActionResult Edit(int id)
         {
             ViewBag.Genres = new SelectList(GenreRepository.Genres, "GenreId", "Name"); 
-            return View(MovieRepository.GeyById(id));
+            return View(MovieRepository.GetById(id));
         }
 
         [HttpPost]
