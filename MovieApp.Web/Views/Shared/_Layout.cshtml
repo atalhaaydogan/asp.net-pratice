@@ -9,10 +9,9 @@
 </head>
 <body>
 
+    @RenderSection("message", false)
     @await Html.PartialAsync("_navbar")
     @RenderSection("header", false)
-
-
 
     <div class="container mt-3">
 
