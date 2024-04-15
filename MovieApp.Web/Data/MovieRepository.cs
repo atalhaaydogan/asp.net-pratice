@@ -20,7 +20,6 @@ namespace MovieApp.Web.Data
                     Title = "film 1",
                     Description = "açıklama 1",
                     Director = "yönetmen 1",
-                    Players = new string[] { "oyuncu 1", "oyuncu 2" },
                     ImageUrl = "1.jpg",
                     GenreId = 1
                 },
@@ -30,7 +29,6 @@ namespace MovieApp.Web.Data
                     Title = "film 2",
                     Description = "açıklama 1",
                     Director = "yönetmen 1",
-                    Players = new string[] { "oyuncu 2", "oyuncu 2" },
                     ImageUrl = "2.jpg",
                     GenreId = 1
                 },
@@ -40,7 +38,6 @@ namespace MovieApp.Web.Data
                     Title = "film 3",
                     Description = "açıklama 1",
                     Director = "yönetmen 1",
-                    Players = new string[] { "oyuncu 1", "oyuncu 2" },
                     ImageUrl = "3.jpg",
                     GenreId = 3
                 },
@@ -50,7 +47,6 @@ namespace MovieApp.Web.Data
                     Title = "film 4",
                     Description = "açıklama 1",
                     Director = "yönetmen 1",
-                    Players = new string[] { "oyuncu 1", "oyuncu 2" },
                     ImageUrl = "1.jpg",
                     GenreId = 4
                 },
@@ -60,7 +56,6 @@ namespace MovieApp.Web.Data
                     Title = "film 5",
                     Description = "açıklama 1",
                     Director = "yönetmen 1",
-                    Players = new string[] { "oyuncu 1", "oyuncu 2" },
                     ImageUrl = "1.jpg",
                     GenreId = 4
                 },
@@ -70,7 +65,6 @@ namespace MovieApp.Web.Data
                     Title = "film 6",
                     Description = "açıklama 1",
                     Director = "yönetmen 1",
-                    Players = new string[] { "oyuncu 1", "oyuncu 2" },
                     ImageUrl = "1.jpg",
                     GenreId = 4
                 }
