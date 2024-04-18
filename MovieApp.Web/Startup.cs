@@ -26,8 +26,8 @@ namespace MovieApp.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MovieContext>(options =>
-                //options.UseSqlServer(Configuration.GetConnectionString("MsSQLConnection")));
-                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("MsSQLConnection")));
+                //options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllersWithViews();
         }
 
