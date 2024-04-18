@@ -28,7 +28,6 @@ namespace MovieApp.Web.Data
                                     MovieId = 1,
                                     Title = "film 1",
                                     Description = "açıklama 1",
-                                    Director = "yönetmen 1",
                                     ImageUrl = "1.jpg",
                                     GenreId = 1
                                 },
@@ -37,7 +36,6 @@ namespace MovieApp.Web.Data
                                     MovieId = 2,
                                     Title = "film 2",
                                     Description = "açıklama 1",
-                                    Director = "yönetmen 1",
                                     ImageUrl = "2.jpg",
                                     GenreId = 1
                                 },
@@ -46,7 +44,6 @@ namespace MovieApp.Web.Data
                                     MovieId = 3,
                                     Title = "film 3",
                                     Description = "açıklama 1",
-                                    Director = "yönetmen 1",
                                     ImageUrl = "3.jpg",
                                     GenreId = 3
                                 },
@@ -55,7 +52,6 @@ namespace MovieApp.Web.Data
                                     MovieId = 4,
                                     Title = "film 4",
                                     Description = "açıklama 1",
-                                    Director = "yönetmen 1",
                                     ImageUrl = "1.jpg",
                                     GenreId = 4
                                 },
@@ -64,7 +60,6 @@ namespace MovieApp.Web.Data
                                     MovieId = 5,
                                     Title = "film 5",
                                     Description = "açıklama 1",
-                                    Director = "yönetmen 1",
                                     ImageUrl = "1.jpg",
                                     GenreId = 4
                                 },
@@ -73,7 +68,6 @@ namespace MovieApp.Web.Data
                                     MovieId = 6,
                                     Title = "film 6",
                                     Description = "açıklama 1",
-                                    Director = "yönetmen 1",
                                     ImageUrl = "1.jpg",
                                     GenreId = 4
                                 }
