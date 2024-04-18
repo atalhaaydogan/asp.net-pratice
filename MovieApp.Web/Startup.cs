@@ -25,7 +25,8 @@ namespace MovieApp.Web
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<MovieContext>(options => 
+            services.AddDbContext<MovieContext>(options =>
+                //options.UseSqlServer(Configuration.GetConnectionString("MsSQLConnection")));
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllersWithViews();
         }
