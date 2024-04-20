@@ -43,38 +43,45 @@ namespace MovieApp.Web.Data
                             {
                                 new Movie
                                 {
-                                    Title = "film 1",
+                                    Title = "Jiı Jitsu",
                                     Description = "açıklama 1",
                                     ImageUrl = "1.jpg",
-                                    Genre = genres[0]
+                                    Genres = new List<Genre> { genres[0], new Genre() { Name = "Yeni Tür" }, genres[1] }
                                 },
                                 new Movie
                                 {
-                                    Title = "film 2",
+                                    Title = "Fatman",
                                     Description = "açıklama 1",
                                     ImageUrl = "2.jpg",
-                                    Genre = genres[1]
+                                    Genres = new List<Genre> { genres[0], genres[2] }
                                 },
                                 new Movie
                                 {
-                                    Title = "film 3",
+                                    Title = "The Dalton Gang",
                                     Description = "açıklama 1",
                                     ImageUrl = "3.jpg",
-                                    Genre = genres[1]
+                                    Genres = new List<Genre> { genres[1], genres[3] }
                                 },
                                 new Movie
                                 {
-                                    Title = "film 4",
+                                    Title = "Tenet",
                                     Description = "açıklama 1",
                                     ImageUrl = "1.jpg",
-                                    Genre = genres[2]
+                                    Genres = new List<Genre> { genres[0], genres[1] }
                                 },
                                 new Movie
                                 {
-                                    Title = "film 5",
+                                    Title = "The Craft: Legacy",
                                     Description = "açıklama 1",
                                     ImageUrl = "1.jpg",
-                                    Genre = genres[3]
+                                    Genres = new List<Genre> { genres[2], genres[4] }
+                                },
+                                new Movie
+                                {
+                                    Title = "Hard Kill",
+                                    Description = "açıklama 1",
+                                    ImageUrl = "1.jpg",
+                                    Genres = new List<Genre> { genres[1], genres[2] }
                                 },
                             };
             var users = new List<User>() {

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
 namespace MovieApp.Web.Entity
 {
@@ -15,8 +16,6 @@ namespace MovieApp.Web.Entity
         public string Description { get; set; }
         public string ImageUrl { get; set; }
         [Required]
-        public Genre Genre { get; set; } // navigation property
-
-        public int GenreId { get; set; } 
+        public List<Genre> Genres { get; set;}
     }
 }
